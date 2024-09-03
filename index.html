@@ -2,38 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Java Script - QR Code Generator</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
+    <link href="images/favicon.ico" rel="icon" sizes="any" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img class="logo" src="./images/logo-qr-generator.svg" alt="logo" width="189" />
-    </header>
-    <main>
-        <div class="code-generator">
-            <img class="diamond-image" src="./images/bg-illustration.svg" width="550" height="620" alt="diamond">
-            <img class="logo" src="./images/logo-qr-generator.svg" alt="logo" width="189" />
-            <div class="input-group">
-                <input class="url-input" placeholder="Enter an url" />
-                <button class="btn-code">QR code</button>
-            </div>
+<header>
+    <img alt="logo" class="logo" src="./images/logo-qr-generator.svg" width="189"/>
+</header>
+<main>
+    <div class="code-generator">
+        <img alt="diamond" class="diamond-image" height="620" src="./images/bg-illustration.svg" width="550">
+        <img alt="logo" class="logo" src="./images/logo-qr-generator.svg" width="189"/>
+        <div class="input-group">
+            <input class="url-input" placeholder="Enter an url"/>
+            <button class="btn-code">QR code</button>
         </div>
-        <div class="code-generator-output">
-            <img class="diamond-image" src="./images/bg-illustration.svg" width="550" height="620" alt="diamond">
-            <div class="qrcode"></div>
-            <div class="btn-group">
-                <button class="btn download">Download <img src="./images/load-circle-duotone.svg" /></button>
-                <button class="btn share">Share <img src="./images/link-alt.svg"/></button>
-            </div>
+    </div>
+    <div class="code-generator-output">
+        <img alt="diamond" class="diamond-image" height="620" src="./images/bg-illustration.svg" width="550">
+        <div class="qrcode"></div>
+        <div class="btn-group">
+            <button class="btn download">Download <img src="./images/load-circle-duotone.svg"/></button>
+            <button class="btn share">Share <img src="./images/link-alt.svg"/></button>
         </div>
-    </main>
+    </div>
+</main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/script.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>

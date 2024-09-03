@@ -1,4 +1,3 @@
-
 let downloadBtn = document.querySelector(".download");
 let shareBtn = document.querySelector(".share");
 let qrCode = document.querySelector(".qrcode");
@@ -19,9 +18,8 @@ const saveImage = (downloadUrl) => {
 };
 
 
-
 generateBtn.addEventListener("click", () => {
-    if(urlInput.value !== "") {
+    if (urlInput.value !== "") {
         codeGenDiv.style.display = "none";
         codeGenOutputDiv.style.display = "flex";
         header.style.display = "flex";
@@ -30,12 +28,12 @@ generateBtn.addEventListener("click", () => {
             text: urlInput.value,
             width: 184,
             height: 184,
-            colorDark : "#000000",
-            colorLight : "#ffffff",
-            correctLevel : QRCode.CorrectLevel.H
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
         });
 
-    }else {
+    } else {
         alert("Please enter a valid URL");
     }
 })
@@ -49,7 +47,7 @@ shareBtn.addEventListener("click", () => {
     const canvas = qrCode.querySelector('canvas');
 
     canvas.toBlob((blob) => {
-        const item = new ClipboardItem({ "image/png": blob });
+        const item = new ClipboardItem({"image/png": blob});
         navigator.clipboard.write([item]);
     });
 

@@ -23,14 +23,16 @@ body {
     letter-spacing: -1px;
     font-weight: 500;
 }
-.diamond-image{
+
+.diamond-image {
     position: absolute;
     left: 50%;
 
     right: 63px;
     z-index: -1;
 }
-.url-input{
+
+.url-input {
     outline: none;
     width: 100%;
     height: 20px;
@@ -39,7 +41,8 @@ body {
     color: #F2F5F9;
 
 }
-.input-group{
+
+.input-group {
     padding: 8px 8px 8px 32px;
     border: 2px #3662E3 solid;
     border-radius: 20px;
@@ -51,7 +54,7 @@ body {
     gap: 8px;
 }
 
-.btn-code{
+.btn-code {
     height: 100%;
     margin-left: auto;
     padding: 16px 40px;
@@ -71,41 +74,43 @@ main {
     align-items: center;
     height: 100vh;
 }
-.code-generator{
+
+.code-generator {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.logo{
+
+.logo {
     margin-bottom: 32px;
 }
 
-header{
+header {
     display: none;
     padding: 40px 72px;
     position: absolute;
 }
 
-.qrcode{
+.qrcode {
     position: relative;
     margin-bottom: 126px;
 }
 
-.qrcode:before{
+.qrcode:before {
     content: '';
     position: absolute;
     width: 242px;
     height: 242px;
     background: #F2F5F9;
-border-radius: 24px;
+    border-radius: 24px;
     z-index: -1;
     left: -29px;
     top: -29px;
 }
 
-.qrcode:after{
+.qrcode:after {
     content: '';
     position: absolute;
     width: 307px;
@@ -117,18 +122,20 @@ border-radius: 24px;
     border-radius: 50%;
     opacity: 20%;
 }
-.code-generator-output{
+
+.code-generator-output {
     position: relative;
     display: none;
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
 }
-.code-generator-output .diamond-image{
+
+.code-generator-output .diamond-image {
     top: -33.5%;
 }
 
-.btn{
+.btn {
     padding: 18px 40px;
     background: #3662E3;
     border: none;
@@ -137,15 +144,16 @@ border-radius: 24px;
     display: flex;
     align-items: center;
 }
-.btn img{
+
+.btn img {
     margin-left: 10px;
 }
 
-.btn-group{
+.btn-group {
     display: flex;
     gap: 32px;
 }
 
 @media screen and (min-width: 720px) {
 
-  }
+}
