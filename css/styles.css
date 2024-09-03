@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    background: #111729;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+.diamond-image{
+    position: absolute;
+    left: 50%;
+
+    right: 63px;
+    z-index: -1;
+}
+.url-input{
+    outline: none;
+    width: 100%;
+    height: 20px;
+    background: inherit;
+    border: none;
+    color: #F2F5F9;
+
+}
+.input-group{
+    padding: 8px 8px 8px 32px;
+    border: 2px #3662E3 solid;
+    border-radius: 20px;
+    background: #030616;
+    min-width: 609px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-code{
+    height: 100%;
+    margin-left: auto;
+    padding: 16px 40px;
+    text-align: center;
+    text-wrap: nowrap;
+    background: #3662E3;
+    border: none;
+    color: #F2F5F9;
+    border-radius: 12px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.code-generator{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-bottom: 32px;
+}
+
+header{
+    display: none;
+    padding: 40px 72px;
+    position: absolute;
+}
+
+.qrcode{
+    position: relative;
+    margin-bottom: 126px;
+}
+
+.qrcode:before{
+    content: '';
+    position: absolute;
+    width: 242px;
+    height: 242px;
+    background: #F2F5F9;
+border-radius: 24px;
+    z-index: -1;
+    left: -29px;
+    top: -29px;
+}
+
+.qrcode:after{
+    content: '';
+    position: absolute;
+    width: 307px;
+    height: 307px;
+    background: #4E80EE;
+    z-index: -2;
+    left: -61.5px;
+    top: -61.5px;
+    border-radius: 50%;
+    opacity: 20%;
+}
+.code-generator-output{
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.code-generator-output .diamond-image{
+    top: -33.5%;
+}
+
+.btn{
+    padding: 18px 40px;
+    background: #3662E3;
+    border: none;
+    color: #F2F5F9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.btn img{
+    margin-left: 10px;
+}
+
+.btn-group{
+    display: flex;
+    gap: 32px;
+}
+
+@media screen and (min-width: 720px) {
+
+  }
